@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import './index.scss';
 
 const Modal = ({ open, setOpen, children}) => (
@@ -14,7 +14,7 @@ const Modal = ({ open, setOpen, children}) => (
 );
 
 function App() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   
   return (
     <div className="App">
